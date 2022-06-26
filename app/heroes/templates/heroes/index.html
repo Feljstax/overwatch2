@@ -1,0 +1,11 @@
+{% extends "heroes/base.html" %} {% load static %}{% block title %} Heroes
+{% endblock%} {% block content%}
+<div class="container">
+  <h1>Heroes</h1>
+  <ul>
+    {% for hero in heroes %}
+    <li>{{ hero.title }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %} {% block jsfiles %} {% endblock jsfiles %}
