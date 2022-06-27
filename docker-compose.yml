@@ -8,12 +8,12 @@ services:
     ports:
       - 8000:8000
     environment:
-    - DB_NAME=overwatch2
-    - DB_USER=postgres
-    - DB_PASSWORD=admin123
-    - DB_HOST=pg
-    - DB_PORT=5432
-    - DATABASE=postgres
+      - DB_NAME=overwatch2
+      - DB_USER=postgres
+      - DB_PASSWORD=admin123
+      - DB_HOST=pg
+      - DB_PORT=5432
+      - DATABASE=postgres
     depends_on:
       - pg
   pg:
@@ -44,3 +44,4 @@ services:
           - "5433:5433"
       depends_on:
           - pg
+
